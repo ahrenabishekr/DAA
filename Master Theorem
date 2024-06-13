@@ -1,0 +1,7 @@
+def master_theorem(a, b, k):
+    if a > b ** k:
+        return "O(n^log_b(a))"
+    elif a == b ** k:
+        return "O(n^k * log(n))"
+    else:
+        return "O(n^k)"
